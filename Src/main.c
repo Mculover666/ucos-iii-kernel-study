@@ -47,10 +47,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-static  OS_TCB   Task1TCB;
-static  CPU_STK  Task1Stk[512];
+OS_TCB   app_task;
+CPU_STK  app_task_stack[512];
 
-static void Task1_entry(void *p_arg)
+__weak int application_entry(void *p_arg)
 {
 	OS_ERR  err;
     
@@ -58,28 +58,10 @@ static void Task1_entry(void *p_arg)
 		  
 	while(1)
 	{
-        printf("task1 is running...\r\n");
+        printf("kernel is running...\r\n");
 	    OSTimeDly(1000, OS_OPT_TIME_DLY, &err);		
 	}   
 }
-
-
-static  OS_TCB   Task2TCB;
-static  CPU_STK  Task2Stk[512];
-
-static void Task2_entry(void *p_arg)
-{
-	OS_ERR  err;
-    
-	(void)p_arg;
-		  
-	while(1)
-	{
-        printf("task2 is running...\r\n");
-	    OSTimeDly(1000, OS_OPT_TIME_DLY, &err);		
-	}   
-}
-
 
 /* USER CODE END PV */
 
@@ -133,33 +115,33 @@ int main(void)
     /* 初始化 uc/OS 内核 */
     OSInit(&err); 
     
-    /* 创建task1 */
-    OSTaskCreate((OS_TCB       *)&Task1TCB,         //任务控制块指针           
-                 (CPU_CHAR     *)"Task 1",          //任务名称
-                 (OS_TASK_PTR   )Task1_entry,       //任务入口函数
-                 (void         *)NULL,              //任务入口函数的参数
-                 (OS_PRIO       )2,                 //任务优先级
-                 (CPU_STK      *)&Task1Stk[0],      //任务栈地址
-                 (CPU_STK_SIZE  )512 / 10,          //任务栈监测区大小
-                 (CPU_STK_SIZE  )512,               //任务栈大小
-                 (OS_MSG_QTY    )0,                 //任务支持接受的最大消息数
-                 (OS_TICK       )0,                 //时间片 */
-                 (void         *)0,                 //堆栈空间大小  
-                 (OS_OPT        )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
-		
-				 /*
-					OS_OPT_TASK_STK_CHK      使能检测任务栈，统计任务栈已用的和未用的
-					OS_OPT_TASK_STK_CLR      在创建任务时，清零任务栈
-				 */  
-                 (OS_ERR       *)&err);
+//    /* 创建task1 */
+//    OSTaskCreate((OS_TCB       *)&Task1TCB,         //任务控制块指针           
+//                 (CPU_CHAR     *)"Task 1",          //任务名称
+//                 (OS_TASK_PTR   )Task1_entry,       //任务入口函数
+//                 (void         *)NULL,              //任务入口函数的参数
+//                 (OS_PRIO       )2,                 //任务优先级
+//                 (CPU_STK      *)&Task1Stk[0],      //任务栈地址
+//                 (CPU_STK_SIZE  )512 / 10,          //任务栈监测区大小
+//                 (CPU_STK_SIZE  )512,               //任务栈大小
+//                 (OS_MSG_QTY    )0,                 //任务支持接受的最大消息数
+//                 (OS_TICK       )0,                 //时间片 */
+//                 (void         *)0,                 //堆栈空间大小  
+//                 (OS_OPT        )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+//		
+//				 /*
+//					OS_OPT_TASK_STK_CHK      使能检测任务栈，统计任务栈已用的和未用的
+//					OS_OPT_TASK_STK_CLR      在创建任务时，清零任务栈
+//				 */  
+//                 (OS_ERR       *)&err);
     
     /* 创建task2 */
-    OSTaskCreate((OS_TCB       *)&Task2TCB,   
-                 (CPU_CHAR     *)"Task 2",
-                 (OS_TASK_PTR   )Task2_entry,
+    OSTaskCreate((OS_TCB       *)&app_task,   
+                 (CPU_CHAR     *)"app_task",
+                 (OS_TASK_PTR   )application_entry,
                  (void         *)0,
-                 (OS_PRIO       )3,
-                 (CPU_STK      *)&Task2Stk[0],
+                 (OS_PRIO       )4,
+                 (CPU_STK      *)&app_task_stack[0],
                  (CPU_STK_SIZE  )512 / 10,
                  (CPU_STK_SIZE  )512,
                  (OS_MSG_QTY    )0,

@@ -550,8 +550,8 @@
   </Group>
 
   <Group>
-    <GroupName>ucos-iii/ports</GroupName>
-    <tvExp>1</tvExp>
+    <GroupName>uC-OS3/port</GroupName>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -562,7 +562,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Ports\ARM-Cortex-M\ARMv7-M\os_cpu_c.c</PathWithFileName>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Ports\ARM-Cortex-M\ARMv7-M\os_cpu_c.c</PathWithFileName>
       <FilenameWithoutPath>os_cpu_c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -574,31 +574,31 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Ports\ARM-Cortex-M\ARMv7-M\ARM\os_cpu_a.asm</PathWithFileName>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Ports\ARM-Cortex-M\ARMv7-M\ARM\os_cpu_a.asm</PathWithFileName>
       <FilenameWithoutPath>os_cpu_a.asm</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>31</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Ports\ARM-Cortex-M\ARMv7-M\ARM\os_cpu.h</PathWithFileName>
-      <FilenameWithoutPath>os_cpu.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
   </Group>
 
   <Group>
-    <GroupName>ucos-iii/source</GroupName>
-    <tvExp>1</tvExp>
+    <GroupName>uC-OS3/source</GroupName>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>31</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_cfg_app.c</PathWithFileName>
+      <FilenameWithoutPath>os_cfg_app.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
     <File>
       <GroupNumber>6</GroupNumber>
       <FileNumber>32</FileNumber>
@@ -606,8 +606,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_cfg_app.c</PathWithFileName>
-      <FilenameWithoutPath>os_cfg_app.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_core.c</PathWithFileName>
+      <FilenameWithoutPath>os_core.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -618,8 +618,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_core.c</PathWithFileName>
-      <FilenameWithoutPath>os_core.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_dbg.c</PathWithFileName>
+      <FilenameWithoutPath>os_dbg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -630,8 +630,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_dbg.c</PathWithFileName>
-      <FilenameWithoutPath>os_dbg.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_flag.c</PathWithFileName>
+      <FilenameWithoutPath>os_flag.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -642,8 +642,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_flag.c</PathWithFileName>
-      <FilenameWithoutPath>os_flag.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_mem.c</PathWithFileName>
+      <FilenameWithoutPath>os_mem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -654,8 +654,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_mem.c</PathWithFileName>
-      <FilenameWithoutPath>os_mem.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_msg.c</PathWithFileName>
+      <FilenameWithoutPath>os_msg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -666,8 +666,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_msg.c</PathWithFileName>
-      <FilenameWithoutPath>os_msg.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_mutex.c</PathWithFileName>
+      <FilenameWithoutPath>os_mutex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -678,8 +678,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_mutex.c</PathWithFileName>
-      <FilenameWithoutPath>os_mutex.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_prio.c</PathWithFileName>
+      <FilenameWithoutPath>os_prio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -690,8 +690,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_prio.c</PathWithFileName>
-      <FilenameWithoutPath>os_prio.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_q.c</PathWithFileName>
+      <FilenameWithoutPath>os_q.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -702,8 +702,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_q.c</PathWithFileName>
-      <FilenameWithoutPath>os_q.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_sem.c</PathWithFileName>
+      <FilenameWithoutPath>os_sem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -714,8 +714,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_sem.c</PathWithFileName>
-      <FilenameWithoutPath>os_sem.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_stat.c</PathWithFileName>
+      <FilenameWithoutPath>os_stat.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -726,8 +726,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_stat.c</PathWithFileName>
-      <FilenameWithoutPath>os_stat.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_task.c</PathWithFileName>
+      <FilenameWithoutPath>os_task.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -738,8 +738,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_task.c</PathWithFileName>
-      <FilenameWithoutPath>os_task.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_tick.c</PathWithFileName>
+      <FilenameWithoutPath>os_tick.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -750,8 +750,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_tick.c</PathWithFileName>
-      <FilenameWithoutPath>os_tick.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_time.c</PathWithFileName>
+      <FilenameWithoutPath>os_time.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -762,8 +762,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_time.c</PathWithFileName>
-      <FilenameWithoutPath>os_time.c</FilenameWithoutPath>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_tmr.c</PathWithFileName>
+      <FilenameWithoutPath>os_tmr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -774,19 +774,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_tmr.c</PathWithFileName>
-      <FilenameWithoutPath>os_tmr.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>47</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Source\os_var.c</PathWithFileName>
+      <PathWithFileName>..\ucOS-III\uC-OS3\Source\os_var.c</PathWithFileName>
       <FilenameWithoutPath>os_var.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -794,14 +782,102 @@
   </Group>
 
   <Group>
-    <GroupName>uC-LIB</GroupName>
-    <tvExp>1</tvExp>
+    <GroupName>uC-OS3/config</GroupName>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>7</GroupNumber>
+      <FileNumber>47</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucos-iii\config\cpu_cfg.h</PathWithFileName>
+      <FilenameWithoutPath>cpu_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
       <FileNumber>48</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucos-iii\config\lib_cfg.h</PathWithFileName>
+      <FilenameWithoutPath>lib_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>49</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucos-iii\config\os_cfg.h</PathWithFileName>
+      <FilenameWithoutPath>os_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>uC-CPU</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>50</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucOS-III\uC-CPU\cpu_core.c</PathWithFileName>
+      <FilenameWithoutPath>cpu_core.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>51</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucOS-III\uC-CPU\ARM-Cortex-M\ARMv7-M\cpu_c.c</PathWithFileName>
+      <FilenameWithoutPath>cpu_c.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>52</FileNumber>
+      <FileType>2</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\ucOS-III\uC-CPU\ARM-Cortex-M\ARMv7-M\ARM\cpu_a.asm</PathWithFileName>
+      <FilenameWithoutPath>cpu_a.asm</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>uC-LIB</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>53</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -812,8 +888,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>49</FileNumber>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>54</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -824,8 +900,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>50</FileNumber>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>55</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -836,8 +912,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>51</FileNumber>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>56</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -850,100 +926,20 @@
   </Group>
 
   <Group>
-    <GroupName>uC-CPU</GroupName>
+    <GroupName>Demo</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>52</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\uC-CPU\cpu_core.c</PathWithFileName>
-      <FilenameWithoutPath>cpu_core.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>53</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\uC-CPU\ARM-Cortex-M\ARMv7-M\cpu_c.c</PathWithFileName>
-      <FilenameWithoutPath>cpu_c.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>54</FileNumber>
-      <FileType>2</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\uC-CPU\ARM-Cortex-M\ARMv7-M\ARM\cpu_a.asm</PathWithFileName>
-      <FilenameWithoutPath>cpu_a.asm</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>55</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\uC-CPU\ARM-Cortex-M\ARMv7-M\ARM\cpu.h</PathWithFileName>
-      <FilenameWithoutPath>cpu.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-  </Group>
-
-  <Group>
-    <GroupName>ucos-iii/config</GroupName>
-    <tvExp>1</tvExp>
-    <tvExpOptDlg>0</tvExpOptDlg>
-    <cbSel>0</cbSel>
-    <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>56</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\uC-LIB\Cfg\Template\lib_cfg.h</PathWithFileName>
-      <FilenameWithoutPath>lib_cfg.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>9</GroupNumber>
+      <GroupNumber>10</GroupNumber>
       <FileNumber>57</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\Cfg\Template\os_cfg.h</PathWithFileName>
-      <FilenameWithoutPath>os_cfg.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>58</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\ucOS-III\uC-CPU\Cfg\Template\cpu_cfg.h</PathWithFileName>
-      <FilenameWithoutPath>cpu_cfg.h</FilenameWithoutPath>
+      <PathWithFileName>..\demo\helloworld\helloworld.c</PathWithFileName>
+      <FilenameWithoutPath>helloworld.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
