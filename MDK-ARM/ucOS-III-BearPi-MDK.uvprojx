@@ -658,6 +658,11 @@
               <FileType>5</FileType>
               <FilePath>..\ucos-iii\config\os_cfg.h</FilePath>
             </File>
+            <File>
+              <FileName>os_cfg_app.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\ucOS-III\config\os_cfg_app.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

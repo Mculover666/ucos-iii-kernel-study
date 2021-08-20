@@ -50,7 +50,7 @@
 OS_TCB   app_task;
 CPU_STK  app_task_stack[512];
 
-__weak int application_entry(void *p_arg)
+__weak void application_entry(void *p_arg)
 {
 	OS_ERR  err;
     
@@ -112,35 +112,19 @@ int main(void)
   /* USER CODE BEGIN 2 */
     printf("uc/OS-III Port On BearPi Board By Mculover666\r\n");
     
-    /* 初始化 uc/OS 内核 */
-    OSInit(&err); 
+    // ucos-iii version
+    printf("uc/OS-III Version:%d\r\n", OSVersion(&err));
     
-//    /* 创建task1 */
-//    OSTaskCreate((OS_TCB       *)&Task1TCB,         //任务控制块指针           
-//                 (CPU_CHAR     *)"Task 1",          //任务名称
-//                 (OS_TASK_PTR   )Task1_entry,       //任务入口函数
-//                 (void         *)NULL,              //任务入口函数的参数
-//                 (OS_PRIO       )2,                 //任务优先级
-//                 (CPU_STK      *)&Task1Stk[0],      //任务栈地址
-//                 (CPU_STK_SIZE  )512 / 10,          //任务栈监测区大小
-//                 (CPU_STK_SIZE  )512,               //任务栈大小
-//                 (OS_MSG_QTY    )0,                 //任务支持接受的最大消息数
-//                 (OS_TICK       )0,                 //时间片 */
-//                 (void         *)0,                 //堆栈空间大小  
-//                 (OS_OPT        )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
-//		
-//				 /*
-//					OS_OPT_TASK_STK_CHK      使能检测任务栈，统计任务栈已用的和未用的
-//					OS_OPT_TASK_STK_CLR      在创建任务时，清零任务栈
-//				 */  
-//                 (OS_ERR       *)&err);
+    // init the ucos-iii kernel
+    OSInit(&err);
+    printf("OSInit result: %d\r\n", err);
     
-    /* 创建task2 */
+    // create application task
     OSTaskCreate((OS_TCB       *)&app_task,   
                  (CPU_CHAR     *)"app_task",
                  (OS_TASK_PTR   )application_entry,
                  (void         *)0,
-                 (OS_PRIO       )4,
+                 (OS_PRIO       )1,
                  (CPU_STK      *)&app_task_stack[0],
                  (CPU_STK_SIZE  )512 / 10,
                  (CPU_STK_SIZE  )512,
@@ -149,10 +133,12 @@ int main(void)
                  (void         *)0,
                  (OS_OPT        )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
                  (OS_ERR       *)&err);
+                 
+    printf("OSInit result: %d\r\n", err);
     
-    /* 启动内核 */
+    // start the ucos-iii kernel
     OSStart(&err);
-
+    
     (void)&err;
 
   /* USER CODE END 2 */
